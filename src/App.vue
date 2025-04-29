@@ -4,6 +4,7 @@ import ListItem from "@/components/ListItem.vue";
 import TimerBox from "@/components/TimerBox.vue";
 import EventBack from "@/components/EventBack.vue";
 import TemplateRefs from "@/components/TemplateRefs.vue";
+import SlotsTitle from "@/components/SlotsTitle.vue";
 
 import { ref } from "vue";
 export default {
@@ -13,6 +14,7 @@ export default {
     TimerBox,
     EventBack,
     TemplateRefs,
+    SlotsTitle,
   },
   setup() {
     // const isAmin = ref(false);
@@ -49,7 +51,14 @@ export default {
 
   <!-- <EventBack /> -->
 
-  <TemplateRefs />
+  <!-- <TemplateRefs /> -->
+  <!-- 如果是該component駝峰式命名，要記得變成小寫，並且透過dash串接 -->
+  <slots-title>Poni</slots-title>
+  <p>gzdgdhzdhtdzh</p>
+  <slots-title>fubon</slots-title>
+  <p>gzdgdhzdhtdzh</p>
+  <slots-title>heyhey</slots-title>
+  <p>gzdgdhzdhtdzh</p>
 
   <!-- 
     <button>click</button>
